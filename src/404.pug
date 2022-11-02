@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    include includes/_config.pug
+    include includes/_head.pug
+    meta(property="og:title" content="404｜" + title)
+    title 404｜#{title}
+  body
+    include includes/_navbar.pug
+
+    header.l-header-inner(data-aos="fade-down")
+      .c-blockade.l-header-inner__blockade
+        .c-blockade__line
+          //- viewport 完成位置 / easing 延遲
+          .c-blockade__text(uk-parallax="viewport: 0.9; x: 70vw,0,-110vw") 台灣最生猛海派的音樂祭 - 大港開唱
+        .c-blockade__line
+          .c-blockade__text(uk-parallax="viewport: 0.8; x: -50vw,0,100vw") 台灣最生猛海派的音樂祭 - 大港開唱
+        .c-blockade__line
+          .c-blockade__text(uk-parallax="viewport: 0.8; easing: 1.5; x: 100vw,-40vw,-60vw") 台灣最生猛海派的音樂祭 - 大港開唱
+        .c-blockade__line
+          .c-blockade__text(uk-parallax="viewport: 0.7; x: -100vw,50vw,90vw") 台灣最生猛海派的音樂祭 - 大港開唱
+
+      h2.u-title.--lg.l-header-inner__title 404 Error
+
+    main
+      section.l-error
+        h3 找不到頁面
+
+
+    include includes/_footer.pug
+    include includes/_scripts.pug
